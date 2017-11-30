@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SXTMainViewController">
+            <connections>
+                <outlet property="contentScrollView" destination="udi-EU-F4f" id="w1u-f5-cfl"/>
+                <outlet property="view" destination="iN0-l3-epB" id="JG6-8b-osy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="udi-EU-F4f">
+                    <frame key="frameInset" width="600" height="600"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Omf-2Q-apX"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="udi-EU-F4f" secondAttribute="bottom" id="4Tc-bD-EeO"/>
+                <constraint firstItem="udi-EU-F4f" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="C5J-V9-m3e"/>
+                <constraint firstAttribute="trailing" secondItem="udi-EU-F4f" secondAttribute="trailing" id="jdj-ds-7p7"/>
+                <constraint firstItem="udi-EU-F4f" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zYO-dl-akm"/>
+            </constraints>
+            <point key="canvasLocation" x="311" y="173"/>
+        </view>
+    </objects>
+</document>
